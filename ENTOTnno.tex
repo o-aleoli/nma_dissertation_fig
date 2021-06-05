@@ -1,0 +1,26 @@
+%! TEX root = ../root/raiz.tex
+\begin{tikzpicture}
+    \begin{axis}
+        [
+            width=0.5\linewidth,
+            legend pos={outer north east},
+            legend style={draw=none},
+            legend cell align=left,
+            tick align=inside,
+            tick pos=left,
+            minor tick num=0,
+            xlabel={Volume (\si{\cubic\angstrom})},
+            xmin=175,xmax=330,
+            ylabel={Total Energy (\si{\electronvolt})},
+            ymin=-155,ymax=-140
+        ]
+        \addplot [black, only marks, mark=*] table {
+            179.4183 -141.9439
+            222.3153 -152.3024
+            246.1200 -153.3157
+            271.5567 -152.5631
+            327.5799 -146.4534
+        }
+        node [pin={[pin distance=10ex]90:\begin{tabular}{l}$a=\SI{5.616}{\angstrom}$\\$b=\SI{7.899}{\angstrom}$\\$c=\SI{5.548}{\angstrom}$\end{tabular}}] at (246.12, -153.3157) {};
+    \end{axis}
+\end{tikzpicture}

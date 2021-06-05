@@ -1,0 +1,39 @@
+#General
+
+Relaxed -> data from 1% tension
+Bulk bands from 1% tension too
+All data exported from p4vasp needs to sum the Fermi level
+
+# Bulk bands
+
+## Relaxed
+
+On xmgrace: S0 to S87
+1% Fermi: 1.3610
+
+## -5%
+
+On xmgrace: S0 to S191
+Fermi: 2.2301
+
+# Thin-film bands
+
+## Relaxed
+
+Total: 424
+On xmgrace:
+    up: S88 to S511
+    down: S512 to S935
+Fermi level: 1.5849
+Δbulk: 2.231016
+Corrected Fermi level: 3.812216
+
+## -5%
+
+Total: 424
+On xmgrace:
+    up: S192 to S615
+    down: S616 to S1039
+Fermi level: 2.4473
+Δbulk: 1.8925
+Corrected Fermi level: 4.3165

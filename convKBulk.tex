@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+    \begin{axis}
+        [
+            legend pos={outer north east},
+            legend style={draw=none},
+            legend cell align=left,
+            tick align=inside,
+            tick pos=left,
+            minor tick num=0,
+            xlabel={Number of $k$ points},
+            xmin=10,xmax=110,
+            ylabel={$\log|\Delta E_T|$ (\si{\electronvolt})},
+            ymin=-5.5,ymax=0.5
+        ]
+        \addplot [black, only marks, mark=*] table {%
+18    0
+48    -2.621241E+00
+100   -4.938925E+00
+        }
+        node [pos=0, pin=0:{\SI{-153.3133}{\electronvolt}}] {};
+    \end{axis}
+\end{tikzpicture}

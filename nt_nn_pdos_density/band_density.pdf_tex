@@ -1,0 +1,63 @@
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'band_density.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+\makeatletter%
+\providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+}%
+\providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+}%
+\providecommand\rotatebox[2]{#2}%
+\newcommand*\fsize{\dimexpr\f@size pt\relax}%
+\newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+\ifx\svgwidth\undefined%
+    \setlength{\unitlength}{235.27559055bp}%
+    \ifx\svgscale\undefined%
+        \relax%
+    \else%
+        \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+\else%
+    \setlength{\unitlength}{\svgwidth}%
+\fi%
+\global\let\svgwidth\undefined%
+\global\let\svgscale\undefined%
+\makeatother%
+\begin{picture}(1,0.72289157)%
+    \put (0.00000000, 0.00000000) {\includegraphics[width=\unitlength,page=1]{../floats/nt_nn_pdos_density/band_density.pdf}}%
+    \put (0.00000000, 0.00000000) {\includegraphics[width=\unitlength,page=2]{../floats/nt_nn_pdos_density/band_density.pdf}}%
+    \put (0.11477680, 0.19055878) {\ce{Na}}%
+    \put (0.11443436, 0.51869591) {\ce{O}}%
+    \put (0.11660312, 0.30239614) {\ce{Ta}}%
+    \put (0.11477680, 0.40879844) {\ce{Nb}}%
+    \put (0.20288614, 0.65978360) {a}%
+    \put (0.60897804, 0.65978360) {b}%
+\end{picture}%
+\endgroup%

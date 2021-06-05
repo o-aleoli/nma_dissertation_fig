@@ -1,0 +1,94 @@
+%% Creator: Inkscape 1.0.2 (e86c870879, 2021-01-15), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'bndstr-pdos_NNO.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+    \makeatletter%
+    \providecommand\color[2][]{%
+        \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+        \renewcommand\color[2][]{}%
+    }%
+    \providecommand\transparent[1]{%
+        \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+        \renewcommand\transparent[1]{}%
+    }%
+    \providecommand\rotatebox[2]{#2}%
+    \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+    \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+    \ifx\svgwidth\undefined%
+        \setlength{\unitlength}{453.5433bp}%
+        \ifx\svgscale\undefined%
+            \relax%
+        \else%
+            \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+        \fi%
+    \else%
+        \setlength{\unitlength}{\svgwidth}%
+    \fi%
+    \global\let\svgwidth\undefined%
+    \global\let\svgscale\undefined%
+    \makeatother%
+    \begin{picture}(1,0.5827)%
+        \lineheight{1}%
+        \setlength\tabcolsep{0pt}%
+        \put (0.0000, 0.0000) {\includegraphics[width=\unitlength,page=1]{../floats/nn_biaxial_strain_bands/bndstr-pdos_NNO.pdf}}%
+        \put (0.0460, 0.0434) {{\footnotesize $\Gamma$}}%
+        \put (0.0801, 0.0434) {{\footnotesize Y}}%
+        \put (0.1317, 0.0434) {{\footnotesize T}}%
+        \put (0.1944, 0.0434) {{\footnotesize $\Gamma$}}%
+        \put (0.0345, 0.0707) {{\footnotesize 0}}%
+        \put (0.0345, 0.1380) {{\footnotesize 1}}%
+        \put (0.0339, 0.2050) {{\footnotesize 2}}%
+        \put (0.0345, 0.2720) {{\footnotesize 3}}%
+        \put (0.0334, 0.3390) {{\footnotesize 4}}%
+        \put (0.0339, 0.4061) {{\footnotesize 5}}%
+        \put (0.0339, 0.4737) {{\footnotesize 6}}%
+        \put (0.0334, 0.5407) {{\footnotesize 7}}%
+        \put (0.0000, 0.2469) {\rotatebox{90}{Energy (\si{\electronvolt})}}%
+        \put (0.2172, 0.0439) {{\footnotesize pDOS (\si{\per\electronvolt})}}%
+        \put (0.3703, 0.0434) {{\footnotesize $\Gamma$}}%
+        \put (0.4049, 0.0434) {{\footnotesize Y}}%
+        \put (0.4560, 0.0434) {{\footnotesize T}}%
+        \put (0.5193, 0.0434) {{\footnotesize $\Gamma$}}%
+        \put (0.5415, 0.0439) {{\footnotesize pDOS (\si{\per\electronvolt})}}%
+        \put (0.0881, 0.0046) {Spin $\downarrow$}%
+        \put (0.3101, 0.0046) {Spin $\uparrow$}%
+        \put (0.6952, 0.0434) {{\footnotesize $\Gamma$}}%
+        \put (0.7291, 0.0434) {{\footnotesize Y}}%
+        \put (0.7809, 0.0434) {{\footnotesize T}}%
+        \put (0.8435, 0.0434) {{\footnotesize $\Gamma$}}%
+        \put (0.8660, 0.0439) {{\footnotesize pDOS (\si{\per\electronvolt})}}%
+        \put (0.8594, 0.0046) {$\varepsilon_F$}%
+        \put (0.5096, 0.0046) {Nb $4d$}%
+        \put (0.6401, 0.0046) {O $2p$}%
+        \put (0.7593, 0.0053) {Total}%
+        \put (0.1642, 0.5633) {$-5\%$}%
+        \put (0.4554, 0.5633) {Ground state}%
+        \put (0.8182, 0.5633) {$5\%$}%
+        \put (0.0614, 0.5633) {a}%
+        \put (0.3890, 0.5633) {b}%
+        \put (0.7110, 0.5633) {c}%
+    \end{picture}%
+\endgroup%

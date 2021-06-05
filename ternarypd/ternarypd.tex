@@ -1,0 +1,115 @@
+\begin{tikzpicture}
+        \begin{ternaryaxis}[
+        width=0.6\textwidth,
+        xlabel=O ($\%$),
+        xlabel style={%
+                at={(axis cs:1,0,0)},
+                anchor=south
+        },
+        xtick={0.2,0.4,0.6,0.8},
+        xticklabels={$20$,$40$,$60$,$80$},
+        xtick style={line width=0.25mm, color=black},
+        ylabel=Na ($\%$),
+        ylabel style={%
+                at={(axis cs:0,1,0)},
+                anchor=north,
+                rotate=-60
+        },
+        ytick={0.2,0.4,0.6,0.8},
+        yticklabels={$20$,$40$,$60$,$80$},
+        ytick style={line width=0.25mm, color=black},
+        zlabel=Nb ($\%$),
+        zlabel style={%
+                at={(axis cs:0,0,1)},
+                anchor=north,
+                rotate=60
+        },
+        ztick={0.2,0.4,0.6,0.8},
+        zticklabels={$20$,$40$,$60$,$80$},
+        ztick style={line width=0.25mm, color=black},
+        clip=false,
+        no markers,
+        grid=none
+        ]
+                \addplot3 [color=black] table {%
+                        O        Na       Nb 
+                        1.0      0.0      0.0
+                        0.6      0.2      0.2
+                        0.666667 0.333333 0.0
+                };
+            
+                \addplot3 [color=black] table {%
+                        O        Na       Nb 
+                        0.666667 0.333333 0.0
+                        0.6      0.2      0.2
+                        0.5      0.5      0.0
+                };
+            
+                \addplot3 [color=black] table {%
+                        O        Na       Nb 
+                        0.5      0.5      0.0
+                        0.6      0.2      0.2
+                        0.333333 0.666667 0.0
+                };
+            
+                \addplot3 [color=black] table {%
+                        O        Na       Nb 
+                        0.333333 0.666667 0.0
+                        0.6      0.2      0.2
+                        0.0      1.0      0.0
+                };
+            
+                \addplot3 [color=black] table {%
+                        O        Na       Nb 
+                        0.0      1.0      0.0
+                        0.6      0.2      0.2
+                        0.0      0.0      1.0
+                };
+            
+                \addplot3 [color=black] table {%
+                        O        Na       Nb 
+                        0.0      0.0      1.0
+                        0.6      0.2      0.2
+                        0.5      0.0      0.5
+                };
+            
+                \addplot3 [color=black] table {%
+                        O        Na       Nb      
+                        0.5      0.0      0.5     
+                        0.6      0.2      0.2     
+                        0.666667 0.0      0.333333
+                };
+            
+                \addplot3 [color=black] table {%
+                        O        Na       Nb      
+                        0.714286 0.0      0.285714
+                        0.6      0.2      0.2     
+                        0.666667 0.0      0.333333
+                };
+            
+                \addplot3 [color=black] table {%
+                        O        Na       Nb      
+                        0.714286 0.0      0.285714
+                        0.6      0.2      0.2     
+                        1.0      0.0      0.0     
+                };
+            
+                \node [circle, draw, fill=red, pin={[pin distance=5ex]270:\ce{NaNbO3}}] at (axis cs:0.6,0.2,0.2) {};
+                \node [pin={[pin distance=9ex]120:\ce{NaO2}}] at (axis cs:0.666667, 0.333333, 0.0) {};
+                \node [pin={[pin distance=9ex]150:\ce{Na2O2}}] at (axis cs:0.5, 0.5, 0.0) {};
+                \node [pin={[pin distance=9ex]180:\ce{Na2O}}] at (axis cs:0.333333, 0.666667, 0.0) {};
+                \node [pin={[pin distance=9ex]0:\ce{NbO}}] at (axis cs:0.5, 0.0, 0.5) {};
+                \node [pin={[pin distance=9ex]0:\ce{NbO2}}] at (axis cs:0.666667, 0.0, 0.333333) {};
+                \node [pin={[pin distance=9ex]30:\ce{Nb2O5}}] at (axis cs:0.714286, 0.0, 0.285714) {};
+        
+                \node [] at (cartesian cs:0.45, 0.65) {A};
+                \node [] at (cartesian cs:0.35, 0.51) {B};
+                \node [] at (cartesian cs:0.275, 0.4) {C};
+                \node [] at (cartesian cs:0.2, 0.265) {D};
+                \node [] at (cartesian cs:0.5, 0.2) {E};
+                \node [] at (cartesian cs:0.71, 0.375) {F};
+                \node [] at (cartesian cs:0.65, 0.51) {G};
+                \node [pin={[pin distance=7ex, pin edge={black, thick}]15:H}] at (cartesian cs:0.6, 0.57) {};
+                \node [] at (cartesian cs:0.55, 0.65) {I};
+        \end{ternaryaxis}
+\end{tikzpicture}

@@ -1,0 +1,132 @@
+\begin{tikzpicture}
+    \begin{ternaryaxis}[
+        width=0.4\textwidth,
+        xlabel=O ($\%$),
+        xlabel style={%
+            font=\footnotesize,
+            at={(axis cs:1,0,0)},
+            anchor=south
+        },
+        xtick={0.2,0.4,0.6,0.8},
+        xticklabels={$20$,$40$,$60$,$80$},
+        xticklabel style={font=\footnotesize},
+        xtick style={line width=0.25mm, color=black},
+        ylabel=Na ($\%$),
+        ylabel style={%
+            font=\footnotesize,
+            at={(axis cs:0,1,0)},
+            anchor=north,
+            rotate=-60
+        },
+        ytick={0.2,0.4,0.6,0.8},
+        yticklabels={$20$,$40$,$60$,$80$},
+        yticklabel style={font=\footnotesize},
+        ytick style={line width=0.25mm, color=black},
+        zlabel=Nb ($\%$),
+        zlabel style={%
+            font=\footnotesize,
+            at={(axis cs:0,0,1)},
+            anchor=north,
+            rotate=60
+        },
+        ztick={0.2,0.4,0.6,0.8},
+        zticklabels={$20$,$40$,$60$,$80$},
+        zticklabel style={font=\footnotesize},
+        ztick style={line width=0.25mm, color=black},
+        clip=false,
+        no markers,
+        colorbar,
+        colormap/bluered,
+        colorbar style={%
+            ylabel=$\Delta E_f (\text{v}_{\ce{X}}^{q}; L\to\infty)$ (\si{\electronvolt}),
+            ylabel style={font=\footnotesize},
+            yticklabel style={%
+                font=\footnotesize,
+                /pgf/number format/.cd,
+                fixed,
+                fixed zerofill,
+                precision=0,
+                /tikz/.cd
+            },
+            ytick style={line width=0.25mm, color=black},
+        },
+        point meta min=-2.0,
+        of colormap/target pos min*=-2.0,
+        point meta max=6.9814,
+        of colormap/target pos max*=6.9814
+    ]
+        \addplot3 [patch, faceted color=black, point meta=\thisrow{H}] table {%
+            O        Na       Nb       H
+            1.0      0.0      0.0      5.3183
+            0.6      0.2      0.2      5.3183
+            0.666667 0.333333 0.0      5.3183
+        };
+
+        \addplot3 [patch, faceted color=black, point meta=\thisrow{H}] table {%
+            O        Na       Nb       H
+            0.666667 0.333333 0.0      5.2228
+            0.6      0.2      0.2      5.2228
+            0.5      0.5      0.0      5.2228
+        };
+
+        \addplot3 [patch, faceted color=black, point meta=\thisrow{H}] table {%
+            O        Na       Nb       H
+            0.5      0.5      0.0      4.6557
+            0.6      0.2      0.2      4.6557
+            0.333333 0.666667 0.0      4.6557
+        };
+
+        \addplot3 [patch, faceted color=black, point meta=\thisrow{H}] table {%
+            O        Na       Nb       H
+            0.333333 0.666667 0.0      1.6438
+            0.6      0.2      0.2      1.6438
+            0.0      1.0      0.0      1.6438
+        };
+
+        \addplot3 [patch, faceted color=black, point meta=\thisrow{H}] table {%
+            O        Na       Nb       H
+            0.0      1.0      0.0      1.2724
+            0.6      0.2      0.2      1.2724
+            0.0      0.0      1.0      1.2724
+        };
+
+        \addplot3 [patch, faceted color=black, point meta=\thisrow{H}] table {%
+            O        Na       Nb       H
+            0.0      0.0      1.0      1.4071
+            0.6      0.2      0.2      1.4071
+            0.5      0.0      0.5      1.4071
+        };
+
+        \addplot3 [patch, faceted color=black, point meta=\thisrow{H}] table {%
+            O        Na       Nb       H
+            0.5      0.0      0.5      1.8651
+            0.6      0.2      0.2      1.8651
+            0.666667 0.0      0.333333 1.8651
+        };
+
+        \addplot3 [patch, faceted color=black, point meta=\thisrow{H}] table {%
+            O        Na       Nb       H
+            0.714286 0.0      0.285714 2.1288
+            0.6      0.2      0.2      2.1288
+            0.666667 0.0      0.333333 2.1288
+        };
+
+        \addplot3 [patch, faceted color=black, point meta=\thisrow{H}] table {%
+            O        Na       Nb       H
+            0.714286 0.0      0.285714 5.3183
+            0.6      0.2      0.2      5.3183
+            1.0      0.0      0.0      5.3183
+        };
+
+        \node [] at (cartesian cs:0.450, 0.650) {\tiny A};
+        \node [] at (cartesian cs:0.350, 0.510) {\tiny B};
+        \node [] at (cartesian cs:0.275, 0.400) {\tiny C};
+        \node [] at (cartesian cs:0.200, 0.265) {\tiny D};
+        \node [] at (cartesian cs:0.500, 0.200) {\tiny E};
+        \node [] at (cartesian cs:0.701, 0.375) {\tiny F};
+        \node [] at (cartesian cs:0.650, 0.510) {\tiny G};
+        \node [pin={[pin distance=7ex, pin edge={black, thick}]15:\tiny H}] at (cartesian cs:0.600, 0.570) {};
+        \node [] at (cartesian cs:0.550, 0.650) {\tiny I};
+        \node [font=\fontsize{14.4}{0}\selectfont] at (cartesian cs:0.000, 0.920) {\small b};
+    \end{ternaryaxis}
+\end{tikzpicture}

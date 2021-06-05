@@ -1,0 +1,14 @@
+%! TEX root = ../root/raiz.tex
+\begin{tikzpicture}[node distance=0.5cm]
+	\node [text width=16em, text centered] (step1) {$V_{\text{eff}} = V_{\text{ext}} + V_H[n] + V_{XC}[n]$};
+	\node [below=of step1, text width=18em, text centered] (step2) {Solve $(\hat{T} + V_{\text{eff}})\ket{\psi_i(\mathbf{r})} = \varepsilon_i \ket{\psi_i(\mathbf{r})}$ for $\varepsilon_i$};
+	\node [below=of step2, text width=9em, text centered] (conv) {$\varepsilon_i - \varepsilon_{i-1} < \varepsilon_{\text{conv}}$?};
+	\node [left=of conv, text width=11em] (newden) {$n_i(\mathbf{r}) = \braket{\psi_i(\mathbf{r}) | \hat{n} | \psi_i(\mathbf{r})}$};
+	\node [right=of conv, text width=6em] (final) {Stop cycle};
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw [arrow] (step1) -- (step2);
+	\draw [arrow] (step2) -- (conv);
+	\draw [arrow] (conv) -- node [anchor=west, xshift=-1.1em, yshift=0.6em] {no} (newden);
+	\draw [arrow] (newden) |- (step1.west);
+	\draw [arrow] (conv.east) -- node [anchor=east, xshift=1.1em, yshift=0.6em] {yes} (final.west);
+\end{tikzpicture}
